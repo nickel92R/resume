@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   font-weight: normal;
+   color: #0f141e;
+   background: #f1f1f1;
+}
+
+a {
+   text-decoration: none;
+   font-weight: bold;
+   color: #86898f;
+}
+
+a:hover {
+   color: #dfa63d;
+}
+
+a:active {
+   color: #df633d;
+}
+
+.container {
+   max-width: 750px;
+   margin: auto;
+   padding-top: 20px;
+}
+
+.info {
+   margin-bottom: 20px;
+   /* разнос по сторонам и картинки и текста */
+   display: flex;
+}
+
+.info img {
+   width: 200px;
+   border-radius: 20px;
+   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info-text {
+   margin-left: 40px;
+}
+
+@media (max-width: 650px) {
+   .info {
+      display: block;
+      text-align: center;
+   }
+}
+
+.info-text p {
+   font-style: italic;
+   font-weight: bold;
+   color: #86898f;
+   margin: 0;
+}
+
+.info-text h4 {
+   margin-bottom: 10px;
+}
+
+.card {
+   border-radius: 15px;
+   padding: 15px 20px;
+   margin-bottom: 20px;
+}
+
+.card h2 {
+   margin: 10px;
+   padding-bottom: 10px;
+}
+
+.hobby {
+   background: #E4EDF2;
+}
+
+.hobby ul {
+   list-style: none;
+   display: flex;
+   padding-left: 10px;
+}
+
+.hobby li {
+   margin: 0;
+   margin-right: 10px;
+}
+
+.experience {
+   background: #F2E8E4;
+}
+
+table {
+   width: 100%;
+}
+
+table th {
+   padding-bottom: 10px;
+}
+
+table td {
+   /* text-align: center; */
+   padding-left: 10px;
+   padding-bottom: 5px;
+}
+
+table tr:last-child {
+   font-weight: bold;
+}
+
+table tr:hover {
+   background: #f1f1f1;
+}
+
+.courses {
+   background: #E4F2F0;
+}
+
+.courses ul {
+   padding-left: 10px;
+   list-style: none;
+}
+
+.courses li {
+   margin-bottom: 5px;
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 5px;
+}
+
+.courses a {
+   color: #111;
+   font-weight: normal;
+}
+
+.courses a:hover {
+   font-weight: bold;
+}
+
+.courses a:active {
+   color: #fff;
+}
+
+.btn {
+   padding: 15px 20px;
+   background: #111;
+   color: #fff;
+   border: none;
+   font-family: inherit;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   opacity: .8;
+}
+
+.form h2 {
+   text-align: center;
+}
+
+.form-row {
+   margin-bottom: 10px;
+   /* 2 способ разнести по сторонам блоки, более простой (но есть нюансы) */
+   display: flex;
+}
+
+.form-row .form-group {
+   margin-right: 20px;
+   /* продолжение способа 2 */
+   width: 50%;
+   /* 1 способ разнести по сторонам блоки */
+   /* display: inline-block; */
+      /* пробелы в calc по обе стороны от минуса обязательны, иначе не работает */
+   /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+   margin-right: 0;
+}
+
+@media (max-width: 650px) {
+   .form-row {
+      display: block;
+   }
+
+   .form-row .form-group {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+}
+
+.form-group label {
+   display: block;
+   font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+   width: 100%;
+   box-sizing: border-box;
+   border: none;
+   background: transparent;
+   border-bottom: 1px solid #ccc;
+   color: #000;
+   padding: 15px 0 10px;
+   outline: none;
+   font-family: inherit;
+}
